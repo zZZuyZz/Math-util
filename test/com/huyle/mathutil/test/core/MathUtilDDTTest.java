@@ -37,11 +37,12 @@ public class MathUtilDDTTest {
    // gia su loop qua tung dong cua mang, ta van can gan tung value cua cot
    // vao bien tuong ung input/ expected de lat hoi feed cho ham
     @Parameterized.Parameter(value = 0)     // value = 0 la map voi mang data
-    public int n;                           // bien map voi value cua cot 0 cua mang
+    public int n;   // bien map voi value cua cot 0 cua mang
+    @Parameterized.Parameter(value = 1)
     public long expected;                   // kieu long vi gia trij cua ham getF() la long
     
     @Test
     public void testGetFactorialGivenRightArgumentReturnsWell(){
-       Assert.assertEquals(expected, MathUtil.getFactorial(n));
+       Assert.assertEquals(MathUtil.getFactorial(n),expected );
     }
 }
