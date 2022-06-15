@@ -3,6 +3,8 @@
 * The Math-Util library that offer multiple math functions(a
 Java-based source code)
 * Unit Testing source code with JUnit framework
+* GitHub Actions to demonstrate the Continuous Integration (CI) technique
+* Regression Test
 *...
 
 ### Screenshots
