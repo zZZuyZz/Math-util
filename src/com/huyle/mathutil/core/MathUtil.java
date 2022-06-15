@@ -25,7 +25,7 @@ public class MathUtil {
     //bài này quy ước tính n! trong khoảng từ 0..20
     public static long getFactorial(int n) {
         if(n < 0 || n > 20)
-            throw new IllegalArgumentException("n must be between 0 .. 20. PLEASE!!!");
+            throw new IllegalArgumentException("Invalid argument. N must be between 0..20");
         if (n == 0 || n ==1)
         return 1; // kết thúc nếu đầu vào đặc biệt
           return n * getFactorial(n-1);
